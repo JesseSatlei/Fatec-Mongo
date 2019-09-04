@@ -7,6 +7,10 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var cursoRouter = require('./routes/curso');
 var professorRouter = require('./routes/professor');
+var turmaRouter = require('./routes/turma');
+var alunoRouter = require('./routes/aluno');
+var avaliacaoRouter = require('./routes/avaliacao');
+var notaRouter = require('./routes/nota');
 
 var app = express();
 
@@ -23,5 +27,9 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/curso', cursoRouter);
 app.use('/professor', professorRouter);
+app.use('/turma', turmaRouter);
+app.use('/aluno', alunoRouter);
+app.use('/avaliacao', avaliacaoRouter);
+app.use('/nota', notaRouter);
 
 module.exports = app;
